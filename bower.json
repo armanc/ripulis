@@ -1,0 +1,23 @@
+{
+  "name": "Ripulis.lv site",
+  "version": "1.0",
+  "authors": [
+    "Armands Baris"
+  ],
+  "description": "Ripulis packages",
+  "license": "MIT",
+  "homepage": "ripulis.lv",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "less": "~1.7.5",
+    "fontawesome": "~4.2.0",
+    "jasny-bootstrap": "~3.1.3"
+  }
+}

@@ -1,0 +1,169 @@
+/**/
+
+body {
+    background: #ddddee;
+    font-size: 12pt;
+}
+
+.main-nav {
+    display:inline-block;
+    margin:auto;
+    padding: 0;
+    li { 
+        display: inline-block;
+        padding: 10px;
+        background: #aaa;
+        text-decoration:none;
+    }
+}
+
+   
+h1              { font-size: 2em; margin: .67em 0 }
+h2              { font-size: 1.5em; margin: .75em 0 }
+h3              { font-size: 1.17em; margin: .83em 0 }
+h5              { font-size: .83em; margin: 1.5em 0 }
+h6              { font-size: .75em; margin: 1.67em 0 }
+h1, h2, h3, h4,h5, h6          { font-weight: bolder }
+
+
+
+
+/*@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900|Oswald);*/
+
+/*ADMIN sadaļa*/
+
+/*    --------------------------------------------------
+	:: Login Section
+	-------------------------------------------------- */
+#login {
+    padding-top: 50px
+}
+#login .form-wrap {
+    width: 30%;
+    margin: 0 auto;
+}
+#login h1 {
+    color: #1fa67b;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+#login .form-group {
+    margin-bottom: 25px;
+}
+#login .checkbox {
+    margin-bottom: 20px;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+#login .checkbox.show:before {
+    content: '\e013';
+    color: #1fa67b;
+    font-size: 17px;
+    margin: 1px 0 0 3px;
+    position: absolute;
+    pointer-events: none;
+    font-family: 'Glyphicons Halflings';
+}
+#login .checkbox .character-checkbox {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+    display: inline-block;
+}
+#login .checkbox .label {
+    color: #6d6d6d;
+    font-size: 13px;
+    font-weight: normal;
+}
+#login .btn.btn-custom {
+    font-size: 14px;
+	margin-bottom: 20px;
+}
+#login .forget {
+    font-size: 13px;
+	text-align: center;
+	display: block;
+}
+
+/*    --------------------------------------------------
+	:: Inputs & Buttons
+	-------------------------------------------------- */
+.form-control {
+    color: #212121;
+}
+.btn-custom {
+    color: #fff;
+	background-color: #1fa67b;
+}
+.btn-custom:hover,
+.btn-custom:focus {
+    color: #fff;
+}
+
+
+/*TABLE*/
+
+    	.row{
+		    margin-top:40px;
+		    padding: 0 10px;
+		}
+		.clickable{
+		    cursor: pointer;   
+		}
+
+		.panel-heading div {
+			margin-top: -18px;
+			font-size: 15px;
+		}
+		.panel-heading div span{
+			margin-left:5px;
+		}
+		.panel-body{
+			display: none;
+		}
+                
+                
+/* WEBSKOLAS NODARBIBA : MIXINS */
+
+/* Toggle dropdown */
+.xo-toggle-dropdown-rounded {
+    border-radius: 10px;
+}
+
+.xo-toggle-dropdown {
+    display:block;
+    .xo-toggle-dropdown-rounded;
+    .xo-toggle-dropdown-success;
+    
+    cursor: pointer;
+    margin:0px;
+    .user-select(none);
+    margin-bottom:10px;
+   
+    .xo-toggle-heading {
+        padding:7px 20px;
+        background: #ccc;
+    }
+    .xo-toggle-content {
+       background: #fff;
+       padding:15px;
+    &.is-hidden {
+        display:none;   
+        
+        }
+    }   
+}
+
+.xo-toggle-dropdown-success {
+    @border-color:#999;
+}
+
