@@ -3,26 +3,20 @@
     <head>
         <meta charset="UTF-8">
         <title>Ripulis - velosipēdu un velodaļu tirgus</title>
-
-<!--        <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />-->
-<!--        <script>
-            less = {
-                env: "development"
-            };
-        </script>-->
-<!--            <link rel="stylesheet/less" type="text/css" href="{{ asset('less/init.less') }}"/>-->
-            <link rel="stylesheet" type="text/css" href="{{ asset('css/site.css') }}"/>           
-<!--            <script src="{{ asset('assets/less/dist/less-1.7.5.min.js')}}"></script>-->
-    
-      
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/site.css') }}"/>           
     </head>
     <body>
-
         @include('includes.nav')
 
-
         @yield('content')
-
+        
+        @section('footer')
+       <footer class="footer">
+        <div class="container">
+          <p class="text-muted">Citi pārdod | Citi pērk | Vēlos pārdot | Vēlos pirkt | Noteikumi</p>
+        </div>
+      </footer>
+        @show
         
         @section('scripts')
             <script src="{{ asset('assets/jquery/dist/jquery.min.js')}}"></script> 

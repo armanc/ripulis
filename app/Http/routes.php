@@ -24,8 +24,10 @@
 
 // my old routes
 Route::get('/', 'PagesController@index');
-//Route::get('/perk/',    'PagesController@perk');
-//Route::get('/pardod/{id}','PagesController@pardod_id');
-//Route::get('/pardod/',   'PagesController@pardod');
-//Route::get('/jauns_sludinajums/',    'PagesController@jauns_sludinajums');
+Route::get('/perk', 'PagesController@perk');
+Route::get('/perk/{id}', 'PagesController@perk_id');
+Route::get('/pardod', 'PagesController@pardod');
+Route::get('/pardod/{id}', 'PagesController@pardod_id');
+Route::get('/perku', 'PagesController@jauns_sludinajums');
+Route::get('/pardodu', 'PagesController@jauns_sludinajums');
 Route::get('/admin/',    'PagesController@admin');

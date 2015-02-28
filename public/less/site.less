@@ -1,14 +1,19 @@
 /**/
+html {
+  position: relative;
+  min-height: 100%;
+}
 
 body {
-    background: #ddddee;
+    background: #fff;
     font-size: 12pt;
+    margin-bottom: 60px;
 }
 
 .main-nav {
     display:inline-block;
     margin:auto;
-    padding: 0;
+    padding: 33px;
     li { 
         display: inline-block;
         padding: 10px;
@@ -167,3 +172,31 @@ h1, h2, h3, h4,h5, h6          { font-weight: bolder }
     @border-color:#999;
 }
 
+
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+.container .text-muted {
+  margin: 20px 0;
+}

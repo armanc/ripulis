@@ -8,12 +8,61 @@ class PagesController extends Controller {
 	 *
 	 * @return void
 	 */
-    
+/* METODES, KAS NOSTRAADAA UZ ROUTES */    
 	protected function index()
 	{      
              return view('pages.index');
 	}   
+	protected function perk()
+	{      
+            $sludinajumi = DB::table('ads')->where('action','=','1')->get();
+            $sludinajumi_skaits = DB::table('ads')->where('action','=','1')->count();
+            
+             return view('pages.perk', compact('sludinajumi'), compact('sludinajumi_skaits'));
+	}   
+	protected function perk_id($id)
+	{      
+            $sludinajumi = DB::table('ads')->find($id);
+             
+             return view('pages.sludinajums', compact('sludinajumi'));
+	}  
+	protected function pardod()
+	{      
+//            $sludinajumi = $this->getSellItems();
+            $sludinajumi = DB::table('ads')->where('action','=','0')->get();
+            $sludinajumi_skaits = DB::table('ads')->where('action','=','0')->count();
+            
+             return view('pages.pardod', compact('sludinajumi'), compact('sludinajumi_skaits'));
+	}   
+ 	protected function pardod_id($id)
+	{      
+//             $sludinajumi = $this->getSellItems()[$id];
+            
+            $sludinajumi = DB::table('ads')->find($id);
+             
+             return view('pages.sludinajums', compact('sludinajumi'));
+	}          
+   	protected function jauns_sludinajums()
+	{      
+            $actions = ['perku','pardodu'];
+//             return redirect('jauns-sludinajums');
+            return view('pages.jauns_sludinajums', compact('actions'));
+	}   
+	
+/*CUSTOM METHODS*/
+
         
+//	protected function jauns_sludinajums()
+//	{      
+//            // te bus jaizdala jauns PIRKSANAS un PARDOSANAS sludinajums
+////             return redirect('user/login');
+//            return view('pages.jauns_sludinajums');
+//	} 
+//        
+        
+                
+        
+                
 	protected function admin()
 	{      
              echo 'admin';
