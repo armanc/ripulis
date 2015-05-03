@@ -3,10 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/var/www/ripulis.lv/app/Http/routes.php</file>
-            <file>file:/var/www/ripulis.lv/app/Http/Controllers/PagesController.php</file>
-            <file>file:/var/www/ripulis.lv/resources/views/master.blade.php</file>
+            <file>file:/var/www/ripulis.lv/app/Subcategories.php</file>
             <file>file:/var/www/ripulis.lv/public/less/site.less</file>
+            <file>file:/var/www/ripulis.lv/resources/views/pages/index.blade.php</file>
+            <file>file:/var/www/ripulis.lv/resources/views/master.blade.php</file>
+            <file>file:/var/www/ripulis.lv/app/SubcategoriesData.php</file>
+            <file>file:/var/www/ripulis.lv/app/User.php</file>
+            <file>file:/var/www/ripulis.lv/app/Categories.php</file>
+            <file>file:/var/www/ripulis.lv/public/js/js.js</file>
+            <file>file:/var/www/ripulis.lv/database/migrations/2015_03_01_131321_subcategories_data.php</file>
         </group>
     </open-files>
 </project-private>

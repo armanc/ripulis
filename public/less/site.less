@@ -9,6 +9,9 @@ body {
     font-size: 12pt;
     margin-bottom: 60px;
 }
+/**/
+
+
 
 .main-nav {
     display:inline-block;
@@ -118,7 +121,7 @@ h1, h2, h3, h4,h5, h6          { font-weight: bolder }
 /*TABLE*/
 
     	.row{
-		    margin-top:40px;
+		    margin-top:0px;
 		    padding: 0 10px;
 		}
 		.clickable{
@@ -135,7 +138,92 @@ h1, h2, h3, h4,h5, h6          { font-weight: bolder }
 		.panel-body{
 			display: none;
 		}
-                
+/* switch*/   
+
+
+/*.block-view-btn.inactive {
+    background-position: right top; 
+}*/
+.block-view-btn {
+    display:inline-block;
+    cursor:pointer;
+    height:15px;  
+    width:20px;
+    background: url('../pics/switch-view.gif');
+    background-position: right top; 
+   &:hover {
+        background-position: right bottom;      
+   }
+}
+.block-view-btn.active {
+    background-position: right bottom; 
+}
+
+/*.list-view-btn.inactive {
+    background-position: left bottom;
+
+}*/
+.list-view-btn {
+    display:inline-block;
+    cursor:pointer;
+    height:15px;
+    width:20px;
+    background: url('../pics/switch-view.gif');
+    background-position: left bottom;
+    &:hover {
+        background-position: left top;      
+    }
+}
+.list-view-btn.active {
+    background-position: left top; 
+}
+/* view*/
+.pardod-table.block-view {
+    display:block;
+    thead,
+    tfoot {
+        display:none;
+    }
+    tbody {
+        display: block;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    
+    .product {
+        display: inline-block;
+        width:200px;    
+        vertical-align: top;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .apraksts{
+        display:block;
+        float: none;
+        clear: both;
+        background: red;
+    }
+    .cena{
+        display:block;
+        float:right;
+        background: green;
+    }
+    .datums{
+        display:block;
+        float:left;
+        background: blue;
+    }
+    .tips {
+        float: none;
+        clear: both;
+        display:block;
+        background: violet;
+    }
+}
+
+
+
                 
 /* WEBSKOLAS NODARBIBA : MIXINS */
 
@@ -194,9 +282,30 @@ h1, h2, h3, h4,h5, h6          { font-weight: bolder }
 
 .container {
   width: auto;
-  max-width: 680px;
+  max-width: 1200px;
   padding: 0 15px;
 }
 .container .text-muted {
   margin: 20px 0;
 }
+
+.ads-panel {
+    background-color:#cdc;
+}
+
+.ads-table {
+   
+    background-color:#ded;
+}
+
+.ads-table2 {
+    background-color:#ded;
+}
+
+@media (min-width: @screen-sm-min) {  }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {  }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {  }

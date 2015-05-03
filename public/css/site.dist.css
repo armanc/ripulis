@@ -7785,6 +7785,7 @@ body {
   font-size: 12pt;
   margin-bottom: 60px;
 }
+/**/
 .main-nav {
   display: inline-block;
   margin: auto;
@@ -7903,7 +7904,7 @@ h6 {
 }
 /*TABLE*/
 .row {
-  margin-top: 40px;
+  margin-top: 0px;
   padding: 0 10px;
 }
 .clickable {
@@ -7918,6 +7919,85 @@ h6 {
 }
 .panel-body {
   display: none;
+}
+/* switch*/
+/*.block-view-btn.inactive {
+    background-position: right top; 
+}*/
+.block-view-btn {
+  display: inline-block;
+  cursor: pointer;
+  height: 15px;
+  width: 20px;
+  background: url('../pics/switch-view.gif');
+  background-position: right top;
+}
+.block-view-btn:hover {
+  background-position: right bottom;
+}
+.block-view-btn.active {
+  background-position: right bottom;
+}
+/*.list-view-btn.inactive {
+    background-position: left bottom;
+
+}*/
+.list-view-btn {
+  display: inline-block;
+  cursor: pointer;
+  height: 15px;
+  width: 20px;
+  background: url('../pics/switch-view.gif');
+  background-position: left bottom;
+}
+.list-view-btn:hover {
+  background-position: left top;
+}
+.list-view-btn.active {
+  background-position: left top;
+}
+/* view*/
+.pardod-table.block-view {
+  display: block;
+}
+.pardod-table.block-view thead,
+.pardod-table.block-view tfoot {
+  display: none;
+}
+.pardod-table.block-view tbody {
+  display: block;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.pardod-table.block-view .product {
+  display: inline-block;
+  width: 200px;
+  vertical-align: top;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.pardod-table.block-view .apraksts {
+  display: block;
+  float: none;
+  clear: both;
+  background: red;
+}
+.pardod-table.block-view .cena {
+  display: block;
+  float: right;
+  background: green;
+}
+.pardod-table.block-view .datums {
+  display: block;
+  float: left;
+  background: blue;
+}
+.pardod-table.block-view .tips {
+  float: none;
+  clear: both;
+  display: block;
+  background: violet;
 }
 /* WEBSKOLAS NODARBIBA : MIXINS */
 /* Toggle dropdown */
@@ -7961,9 +8041,20 @@ h6 {
 /* Not required for template or sticky footer method. */
 .container {
   width: auto;
-  max-width: 680px;
+  max-width: 1200px;
   padding: 0 15px;
 }
 .container .text-muted {
   margin: 20px 0;
 }
+.ads-panel {
+  background-color: #cdc;
+}
+.ads-table {
+  background-color: #ded;
+}
+.ads-table2 {
+  background-color: #ded;
+}
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
